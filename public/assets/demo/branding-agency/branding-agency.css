@@ -39,7 +39,7 @@ header .header-button .btn.btn-switch-text.btn-medium > span {
     padding: 12px 22px;
 }
 header .navbar-brand img {
-    max-height: 34px;
+    max-height: 40px;
 }
 .navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a {
     font-size: 17px;
@@ -182,7 +182,7 @@ footer a:hover {
     color: var(--white);
 }
 footer .footer-logo img {
-    max-height: 34px;
+    max-height: 56px;
 }
 /* z-index */
 .z-index-99 {

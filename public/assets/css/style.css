@@ -131,6 +131,7 @@ ul li {
     list-style: none;
 }
 a {
+    /* color: var(--medium-gray); */
     color: var(--medium-gray);
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -3528,7 +3529,7 @@ textarea:focus,
     06. Background and border
 ====================================== */
 /* Background color */
-.bg-theme-dark-blue{
+.bg-theme-dark-blue {
     background-color: #2f3354;
 }
 .bg-base-color {
@@ -20370,6 +20371,9 @@ footer {
     padding-top: 110px;
     padding-bottom: 110px;
 }
+footer a{
+    color: #7ecbde;
+}
 footer.half-footer {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -20473,11 +20477,11 @@ footer .footer-navbar .nav-item:last-child a {
     text-align: justify !important;
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px){
-    .media_container_576_767{
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .media_container_576_767 {
         max-width: 540px !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
-        margin:auto;
+        margin: auto;
     }
 }

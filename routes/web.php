@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +35,9 @@ Route::get('portfolio', function () {
 Route::get('contact', function () {
     $heading_title = 'Contact';
     return view('front.contact', compact('heading_title'));
+});
+Route::post('contact', function (Request $request) {
+    $input = $request->all();
+    Mail::to('abhayluva@gmail.com')->send(new ContactMail());
+    dd($input);
 });

@@ -41,7 +41,7 @@
                 </div>
                 <div class="d-block mb-5px">
                     <span class="text-dark-gray fw-600">T:</span>
-                    <a href="tel:12345678910">+91 8460637745</a>
+                    <a href="tel:+918460637745">+91 8460637745</a>
                 </div>
                 <a href="https://www.google.com/maps/place/Hari+krishna+arcade/@22.2706986,70.7807167,18.67z/data=!4m6!3m5!1s0x3959cbebd97f00f1:0x1f2d8708b5f1afd6!8m2!3d22.2702732!4d70.7804556!16s%2Fg%2F11hzkxlqds?entry=ttu" target="_blank" class="fs-14 text-dark-gray text-uppercase fw-600">
                     <span class=""><i class="feather icon-feather-map-pin fs-14 me-5px"></i>View on google map</span>
@@ -52,7 +52,7 @@
 </section>
 <!-- end section -->
 <!-- start section -->
-<section class="p-0">
+<!-- <section class="p-0">
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-xl-6 col-lg-7 cover-background md-h-500px sm-h-400px md-mb-50px" style="background-image:url('{{ asset('assets/img/contact/contact-with-open-eye.png') }}')">
@@ -64,21 +64,22 @@
                         <span class="text-gradient-base-color fs-15 alt-font fw-700 ls-05px text-uppercase d-inline-block align-middle">Get in touch with us</span>
                     </div>
                     <h2 class="text-dark-gray alt-font fw-600 w-90 xxl-w-100 ls-minus-2px">Connect with Open Eye</h2>
-                    <form action="email-templates/contact-form.php" method="post">
+                    <form action="contact" method="post">
+                        @csrf
                         <div class="position-relative form-group mb-20px">
                             <span class="form-icon"><i class="bi bi-person icon-extra-medium text-dark-gray"></i></span>
-                            <input class="ps-0 border-radius-0px border-color-extra-medium-gray form-control required" type="text" name="uname" placeholder="Your name*" />
+                            <input class="ps-0 border-radius-0px border-color-extra-medium-gray form-control required" type="text" name="uname" id="uname" placeholder="Your name*" />
                         </div>
                         <div class="position-relative form-group mb-20px">
                             <span class="form-icon"><i class="bi bi-envelope icon-extra-medium text-dark-gray"></i></span>
-                            <input class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control required" type="email" name="email" placeholder="Your email*" />
+                            <input class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control required" type="email" name="email" id="email" placeholder="Your email*" />
                         </div>
                         <div class="position-relative form-group mb-20px">
                             <span class="form-icon"><i class="bi bi-chat-square-dots icon-extra-medium text-dark-gray"></i></span>
-                            <input class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control required" type="text" name="subject" placeholder="How We Can Help You*" />
+                            <input class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control required" type="text" name="subject" id="subject" placeholder="How We Can Help You*" />
                         </div>
                         <div class="position-relative form-group form-textarea mt-15px mb-0 pb-10">
-                            <textarea class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control" name="message" placeholder="Your message" rows="3"></textarea>
+                            <textarea class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control" name="message" id="message" placeholder="Your message" rows="3"></textarea>
                             <span class="form-icon"><i class="bi bi-chat-square-dots icon-extra-medium text-dark-gray"></i></span>
                             <input type="hidden" name="redirect" value="">
                             <button class="btn btn-medium btn-dark-gray btn-round-edge btn-box-shadow mb-20px mt-25px submit w-100 left-icon" type="submit"><i class="fa-regular fa-envelope"></i>Send message</button>
@@ -90,24 +91,27 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- end section -->
 <!-- start section -->
-<!-- <section>
+<section class="pt-0">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center elements-social social-icon-style-06">
                 <div class="fs-22 mb-30px text-dark-gray">Connect with <span class="fw-600">social media</span></div>
                 <ul class="extra-large-icon fw-600" data-anime='{ "el": "childs", "translateX": [10, 0], "opacity": [0,1], "duration": 300, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <li><a class="facebook" href="https://www.facebook.com" target="_blank"><span class="brand-label text-dark-gray">Fb</span><span class="brand-icon fa-brands fa-facebook-f"></span></a></li>
+                    <li><a class="facebook" href="skype:live:.cid.6a6f62cef6204cb1?chat" target="_blank"><span class="brand-label text-dark-gray">Sk</span><span class="brand-icon fa-brands fa-skype"></span></a></li>
+                    <li><a class="facebook" href="mailto:sales@openeyeit.com" target="_blank"><span class="brand-label text-dark-gray">Em</span><span class="brand-icon fa-brands fa-telegram"></span></a></li>
+                    <li><a class="facebook" href="https://www.linkedin.com/in/open-eye-b397b6305/" target="_blank"><span class="brand-label text-dark-gray">In</span><span class="brand-icon fa-brands fa-linkedin"></span></a></li>
+                    <!-- <li><a class="facebook" href="https://www.facebook.com" target="_blank"><span class="brand-label text-dark-gray">Fb</span><span class="brand-icon fa-brands fa-facebook-f"></span></a></li>
                     <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><span class="brand-label text-dark-gray">Db</span><span class="brand-icon fa-brands fa-dribbble"></span></a></li>
                     <li><a class="twitter" href="http://www.twitter.com" target="_blank"><span class="brand-label text-dark-gray">Tw</span><span class="brand-icon fa-brands fa-twitter"></span></a></li>
                     <li><a class="behance" href="http://www.behance.com" target="_blank"><span class="brand-label text-dark-gray">Be</span><span class="brand-icon fa-brands fa-behance"></span></a></li>
-                    <li><a class="pinterest" href="https://in.pinterest.com" target="_blank"><span class="brand-label text-dark-gray">Pt</span><span class="brand-icon fa-brands fa-pinterest-p"></span></a></li>
+                    <li><a class="pinterest" href="https://in.pinterest.com" target="_blank"><span class="brand-label text-dark-gray">Pt</span><span class="brand-icon fa-brands fa-pinterest-p"></span></a></li> -->
                 </ul>
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <!-- end section -->
 @endsection
