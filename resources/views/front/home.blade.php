@@ -1,7 +1,8 @@
 @extends('front.layout.layout')
-@section('heading_title')
-{{ $heading_title }}
-@endsection
+@section('heading_title', $heading_title)
+@section('meta_description', $meta_description)
+@section('meta_keyword', $meta_keyword)
+@section('meta_title', $meta_title)
 @section('content')
 <!-- start banner -->
 <section class="p-0 full-screen ipad-top-space-margin position-relative overflow-hidden md-h-auto">

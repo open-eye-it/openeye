@@ -2,12 +2,14 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>Open Eye - @yield('heading_title')</title>
+    <title>@yield('heading_title') - Open Eye</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="ThemeZaa">
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
+    <meta name="description" content="@yield('meta_description')">
+    <meta name="keyword" content="@yield('meta_keyword')">
+    <meta name="title" content="@yield('meta_title')">
     <!-- favicon icon -->
     <link rel="shortcut icon" href="{{ asset('assets/img/logo/favicon.png') }}">
     <link rel="browser-icon" sizes="16x16" href="{{ asset('assets/img/logo/openeye-favicon-16x16.png') }}">

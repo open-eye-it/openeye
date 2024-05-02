@@ -1,7 +1,8 @@
 @extends('front.layout.layout')
-@section('heading_title')
-{{ $heading_title }}
-@endsection
+@section('heading_title', $heading_title)
+@section('meta_description', $meta_description)
+@section('meta_keyword', $meta_keyword)
+@section('meta_title', $meta_title)
 @section('content')
 <!-- start section  -->
 <section class="top-space-margin">
